@@ -1,0 +1,28 @@
+name: learn-github-actions
+on:
+    push:
+      branches:
+        - develop
+jobs:
+  apk:
+    name: Generate APK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17.0.7
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+        with:
+            cache-disabled: true
+      - name: Set up Android SDK
+        if: ${{ env.ACT }} # Only run on local act setups, as GitHub Actions provides the Android SDK on Ubuntu
+        uses: android-actions/setup-android@v2
+      - name: Make Gradlew Executable
+        run: chmod +x ./gradlew
+      - name: Build APK
+        run: ./gradlew assembleRelease --stacktrace --debug

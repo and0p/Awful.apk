@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "777112048349",
+    "project_id": "awful-fork-e3916",
+    "storage_bucket": "awful-fork-e3916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777112048349:android:5d2316daed4a94dec7c134",
+        "android_client_info": {
+          "package_name": "com.ferg.awfulapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApiY-6YToF-ju0GFY9giTZlJReE--GOv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777112048349:android:39cd0d2e1ff0d068c7c134",
+        "android_client_info": {
+          "package_name": "com.ferg.awfulapp.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApiY-6YToF-ju0GFY9giTZlJReE--GOv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
